@@ -20,12 +20,12 @@
 
   <body>
     <header class="body-header">
-      <div class="container flex">
-        <nav class="nav-container">
+      <div class="container tab-flex">
+        <nav class="nav-container flex-header">
           <a href="./index.html" class="company-title company-title--header"
             >Web<span class="company-title-studio">Studio</span></a
           >
-
+          <button class="menu-button">menu</button>
           <ul class="nav-menu">
             <li>
               <a
@@ -129,7 +129,7 @@
         </div>
       </section>
       <section class="section-team">
-        <div class="container">
+        <div class="container tab-team-container">
           <h2 class="team-title" id="team-title-id">Our Team</h2>
 
           <ul class="team-list">
@@ -289,13 +289,12 @@
                   alt="Banking App"
                   width="360"
                 />
-                <!-- <div class="overlay"> -->
+
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <!-- </div> -->
               </div>
               <div class="portfolio-container-item">
                 <h3 class="portfolio-container-title">Banking App</h3>
@@ -402,9 +401,9 @@
     </main>
 
     <footer class="footer-class">
-      <div class="footer-flex">
-        <div class="footer-block">
-          <a href="./index.html" class="company-title company-title--footer"
+      <div class="footer-flex container">
+        <div class="footer-block flex">
+          <a href="./index.html" class="company-title company-title-footer"
             >Web<span class="company-title-studio-bottom">Studio</span></a
           >
 
@@ -413,7 +412,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-media">
+        <div class="footer-media flex">
           <p class="footer-media-text">Social media</p>
           <ul class="social-container soc-container">
             <li class="social-container-item">
@@ -446,7 +445,6 @@
           <p class="footer-media-text">Subscribe</p>
           <form action="subscribe" class="align-subscribe">
             <label class="subscribe-label">
-              <!-- <div class="align-subscribe"> -->
               <input
                 name="subscription"
                 class="subscribe-input"
@@ -455,15 +453,11 @@
               />
             </label>
             <button class="subscribe-button" type="submit">
-              <!-- <div class="subscribe-button-container">
-                <p class="button-text">Subscribe</p> -->
               Subscribe
               <svg width="24" height="24" class="subscribe-svg">
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
-              <!-- </div> -->
             </button>
-            <!-- </div> -->
           </form>
         </div>
       </div>
