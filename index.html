@@ -22,24 +22,40 @@
     <header class="body-header">
       <div class="container tab-flex">
         <nav class="nav-container flex-header">
-          <a href="./index.html" class="company-title company-title--header"
+          <a
+            href="./index.html"
+            class="company-title company-title--header body-header-link"
             >Web<span class="company-title-studio">Studio</span></a
           >
-          <button class="menu-button">menu</button>
+          <button type="button" class="menu-button" data-mobile-open>
+            <svg class="" width="24" height="24">
+              <use href="./images/icons.svg#mob-menu-button"></use>
+            </svg>
+          </button>
           <ul class="nav-menu">
             <li>
               <a
                 href="./index.html"
                 target="_blank"
-                class="nav-menu-studio studio-active"
+                class="nav-menu-studio studio-active body-header-link"
                 >Studio</a
               >
             </li>
             <li>
-              <a href="" target="_blank" class="nav-menu-studio">Portfolio</a>
+              <a
+                href=""
+                target="_blank"
+                class="nav-menu-studio body-header-link"
+                >Portfolio</a
+              >
             </li>
             <li>
-              <a href="" target="_blank" class="nav-menu-studio">Contacts</a>
+              <a
+                href=""
+                target="_blank"
+                class="nav-menu-studio body-header-link"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
@@ -48,17 +64,90 @@
             <li>
               <a
                 href="mailto:info@devstudio.com"
-                class="address-task-requierement"
+                class="address-task-requierement body-header-link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="address-task-requierement"
+              <a
+                href="tel:+110001111111"
+                class="address-task-requierement body-header-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mob-menu is-ope" data-mobile>
+        <button type="button" class="modal-button-close" data-mobile-close>
+          <svg class="" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-nav">
+          <ul class="mob-menu-nav-list">
+            <li>
+              <a
+                href="./index.html"
+                target="_blank"
+                class="mob-menu-studio menu-studio-active"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a href="" target="_blank" class="mob-menu-studio">Portfolio</a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="mob-menu-studio">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address-mobile">
+          <ul class="mob-address-list">
+            <li>
+              <a
+                href="tel:+110001111111"
+                class="address-task-requierement menu-studio-active"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="address-task-requierement"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-media">
+          <ul class="mob-menu-social-container">
+            <li class="social-container-item">
+              <a class="social-container-link" href="#facebook"
+                ><svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="social-container-item">
+              <a class="social-container-link" href="#instagram"
+                ><svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="social-container-item">
+              <a class="social-container-link" href="#linked-in"
+                ><svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+            <li class="social-container-item">
+              <a class="social-container-link" href="#twitter"
+                ><svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -542,9 +631,14 @@
                 ><svg width="10" height="8" class="icon-checkbox">
                   <use href="./images/icons.svg#icon-checkbox"></use></svg
               ></span>
-              I accept the terms and conditions of the
+              <!-- I accept the terms and conditions of the
 
-              <a class="pp-link" href="">Privacy Policy</a>
+              <a class="pp-link" href="">Privacy Policy</a> -->
+              <div class="agreement-align">
+                I accept the terms and conditions of the
+
+                <a class="pp-link" href="">Privacy Policy</a>
+              </div>
             </label>
           </div>
           <button type="button" class="button-order-service">Send</button>
@@ -552,5 +646,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
