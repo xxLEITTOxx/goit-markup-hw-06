@@ -346,8 +346,9 @@ address {
 }
 
 .section-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding: 96px 0;
 }
 
 body ul {
@@ -895,10 +896,24 @@ img {
 .flex-header {
   justify-content: space-between;
 }
+
+.footer-media-addition {
+  margin-bottom: 72px;
+}
+
 @media screen and (min-width: 768px) {
   .body-header-link {
     padding: 24px 0;
   }
+
+  .subscribe-input {
+    width: 264px;
+  }
+
+  .footer-media-addition {
+    margin-bottom: 0;
+  }
+
   .main-page-title {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1049,6 +1064,19 @@ img {
     padding: 24px 0;
   }
 
+  .footer-block {
+    margin-right: 0;
+  }
+
+  .section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .footer-flex {
+    justify-content: space-between;
+  }
+
   .address-top a {
     font-weight: 400;
     font-size: 16px;
@@ -1063,6 +1091,11 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/people-office.jpg");
+    padding: 188px 0;
+  }
+
+  .footer-block {
+    margin-bottom: 0px;
   }
 
   @media screen and (min-resolution: 2x) {
@@ -1128,7 +1161,7 @@ img {
   }
 
   .footer-media {
-    margin-right: 80px;
+    margin-right: 0px;
   }
 }
 
